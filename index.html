@@ -39,14 +39,14 @@
   Hopefully this is where the 'g: search' and 'y: search' will search google and youtube
 </p>
 
-<div onload="animation()">
+<div id="asciimation">
 
 <script>
 function animation() {
-var div4 = makeDiv();
-bodyAppend(div4);
-div4.style.fontFamily = "monospace";
-var animArray4 = [
+	var div4 = makeDiv();
+	bodyAppend(div4);
+	div4.style.fontFamily = "monospace";
+	var animArray4 = {
 	"[>    ]",
 	"[>>   ]",
 	"[>>>  ]",
@@ -55,9 +55,9 @@ var animArray4 = [
 	"[   >>]",
 	"[    >]",
 	"[     ]"
-];
-
-var anim4 = new ASCIIAnimation(animArray4, 50, div4);
-}
+		};
+	var anim4 = new ASCIIAnimation(animArray4, 50, div4);
+	document.getElementById("asciimation").innerHTML = anim4;
+	}
 </script>
 </body>
