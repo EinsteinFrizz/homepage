@@ -49,6 +49,10 @@ var txt = 'succ succ succ succ succ';
 var speed = 50;
 	
 function typeWriter() {
+	if (i == txt.length) {
+		document.getElementById("asciimation").innerHTML = "";
+		i = 0;
+	}
 	if (i < txt.length) {
 		document.getElementById("asciimation").innerHTML += txt.charAt(i);
 		i++;
