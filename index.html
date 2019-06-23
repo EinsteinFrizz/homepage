@@ -43,10 +43,11 @@
 
 <script>
 function animation() {
-	var div4 = makeDiv();
-	bodyAppend(div4);
-	div4.style.fontFamily = "monospace";
-	var animArray4 = {
+	animation.enable();
+	animation.add({
+		key: 'W',
+		target: document.getElementById("asciimation")'
+		array: [
 	"[>    ]",
 	"[>>   ]",
 	"[>>>  ]",
@@ -55,9 +56,8 @@ function animation() {
 	"[   >>]",
 	"[    >]",
 	"[     ]"
-		};
-	var anim4 = new ASCIIAnimation(animArray4, 50, div4);
-	document.getElementById("asciimation").innerHTML = anim4;
+		]
+	});
 	}
 </script>
 </body>
