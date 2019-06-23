@@ -47,20 +47,17 @@
 <script>
 var i = 0;
 var equals = '';
-var squirt = '';
 var speed = 50;
 var penislength = 15;
 	
 function typeWriter() {
 	if (i == penislength) {
 		equals = "";
-		squirt = "";
 		i = 0;
 	}
 	if (i < penislength) {
 		equals += "=";
-		squirt += "💦";
-		document.getElementById("asciimation").innerHTML = "8"+equals+"D"+squirt;
+		document.getElementById("asciimation").innerHTML = "8"+equals+"D💦";
 		i++;
 		setTimeout(typeWriter, speed);
 	}
