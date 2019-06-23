@@ -42,20 +42,22 @@
 
 <button onclick="typeWriter()">Animate</button>
 
-<p>this shouldnt animate</p>
+<p>penor</p>
 
 <script>
 var i = 0;
-var txt = '8==================D 💦';
+var equals = '';
 var speed = 50;
+var penislength = 15;
 	
 function typeWriter() {
-	if (i == txt.length) {
-		document.getElementById("asciimation").innerHTML = "";
+	if (i == penislength) {
+		equals = "";
 		i = 0;
 	}
-	if (i < txt.length) {
-		document.getElementById("asciimation").innerHTML += txt.charAt(i);
+	if (i < penislength) {
+		equals += "=";
+		document.getElementById("asciimation").innerHTML += "8"+equals+"D💦";
 		i++;
 		setTimeout(typeWriter, speed);
 	}
